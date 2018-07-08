@@ -6,11 +6,6 @@ app_name = "images"
 
 urlpatterns = [
     path(
-        "",
-        view = views.Image.as_view(),
-        name = "images"
-    ),
-    path(
         "<str:username>",
         view = views.Image.as_view(),
         name = "user_image"
